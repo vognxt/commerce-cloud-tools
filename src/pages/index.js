@@ -71,7 +71,7 @@ const theme = {
 // Styled Components
 const AppContainer = styled.div`
   min-height: 100vh;
-  background: ${props => props.theme.gradients.primary};
+  background: ${props => props.theme?.gradients?.primary || 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'};
   position: relative;
 `;
 
